@@ -23,13 +23,6 @@ gulp.task('build', function () {
       .pipe(gulp.dest('src'));
 });
 
-// Browserify for main libs
-gulp.task('main', function () {
-    return gulp.src('src/index.js')
-      .pipe(browserify())
-      .pipe(gulp.dest('dist'));
-});
-
 // Browserify for demo app
 gulp.task('demo', function () {
     return gulp.src('src/demo.js')
@@ -38,7 +31,7 @@ gulp.task('demo', function () {
 });
 
 gulp.task('compile', function(done) {
-    runSequence('build', 'main', 'demo', function() {
+    runSequence('build', 'demo', function() {
         done();
     });
 });
