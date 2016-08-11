@@ -1,5 +1,5 @@
 
-React/Flux application over Websocket.
+A React polyfill that enables elements' Websocket
 
 ## Install
 
@@ -15,7 +15,7 @@ npm install react-websocket-view --save
 
 2. Use ```<WebsocketView />``` as the parent component, and put Websocket server URI to ```server``` props.
 
-3. Add ```onMessage``` callback to your components.
+3. Add ```onMessage``` callback to your elements.
 
 ## Quickstart
 
