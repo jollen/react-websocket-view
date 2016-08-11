@@ -35,7 +35,33 @@ render(
 );
 ```
 
+## Examples
+
+1. Two ```<p>``` elements receive real-time data from the same server.
+
+```
+<WebsocketView 
+  server="wss://wot.city/object/testman/viewer">
+  <p onMessage={function(data) {console.log(data)}}></p>
+  <p onMessage={function(data) {console.log(data)}}></p>
+</WebsocketView>
+```
+
+2. Two ```<p>``` elements receive real-time data from different servers.
+
+```
+<div>
+  <WebsocketView 
+    server="wss://wot.city/object/room1/viewer">
+    <p onMessage={function(data) {console.log(data)}}></p>
+  </WebsocketView>
+  <WebsocketView 
+    server="wss://wot.city/object/room2/viewer">
+    <p onMessage={function(data) {console.log(data)}}></p>
+  </WebsocketView>
+</div>
+```
+
 ## License
 
-The [MIT License]
-](http://www.opensource.org/licenses/MIT) (MIT). See [LICENSE.md](LICENSE.md).
+The [MIT License](http://www.opensource.org/licenses/MIT) (MIT). See [LICENSE.md](LICENSE.md).
