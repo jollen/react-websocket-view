@@ -1,5 +1,5 @@
 
-React application over Websocket.
+React/Flux application over Websocket.
 
 ## Install
 
@@ -37,7 +37,7 @@ render(
 
 ## Examples
 
-1. Two ```<p>``` elements receive real-time data from the same server.
+* Two ```<p>``` elements receive real-time data from the same server.
 
 ```
 <WebsocketView 
@@ -47,7 +47,7 @@ render(
 </WebsocketView>
 ```
 
-2. Two ```<p>``` elements receive real-time data from different servers.
+* Two ```<p>``` elements receive real-time data from different servers.
 
 ```
 <div>
