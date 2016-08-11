@@ -1,8 +1,8 @@
 {
   "name": "react-websocket-view",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "React application over Websocket",
-  "main": "dist/index.js",
+  "main": "index.js",
   "dependencies": {
     "events": "^1.1.1",
     "flux": "^2.1.1",
